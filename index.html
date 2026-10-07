@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dafa Dwi Andika | Portofolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Efek global -->
+  <div id="pre">
+    <div>
+      <b id="pn">0</b>
+      <small>MEMUAT PORTOFOLIO</small>
+    </div>
+  </div>
+  <div id="bar"></div>
+  <div class="cur"></div>
+  <div class="ring"></div>
+  <canvas id="bg"></canvas>
+  <canvas class="fx" id="fx"></canvas>
+
+  <!-- Navigasi -->
+  <header>
+    <div class="wrap nav">
+      <a href="#home" class="logo">DDA</a>
+      <button class="ib" id="burger" aria-label="Menu">Menu</button>
+      <nav class="links" id="links">
+        <a href="#about">Tentang</a>
+        <a href="#edu">Pendidikan</a>
+        <a href="#org">Organisasi</a>
+        <a href="#work">Kerja</a>
+        <a href="#skill">Keahlian</a>
+        <a href="#proj">Prestasi</a>
+        <a href="#contact">Kontak</a>
+        <button class="ib" id="theme" aria-label="Ganti tema">☾</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- BERANDA -->
+    <section class="hero" id="home">
+      <div class="wrap">
+        <div>
+          <h1 id="nm" data-t="Dafa Dwi">Dafa Dwi <em data-t="Andika">Andika</em></h1>
+          <p class="role"><span id="ty"></span><i></i></p>
+          <p class="sub">
+            Mahasiswa Ilmu Komputer Universitas Sumatera Utara stambuk 2026.
+            Terbiasa memimpin, mengurus administrasi, dan menjaga ketelitian angka.
+            Sekarang membangun hal-hal yang berjalan di browser.
+          </p>
+          <div class="btns">
+            <a class="btn fill mg" href="#contact">Hubungi saya</a>
+            <a class="btn gh mg" href="#proj">Lihat prestasi</a>
+          </div>
+        </div>
+
+        <div class="frame">
+          <div class="tilt" id="tilt">
+            <div class="orbit"></div>
+            <div class="photo">
+              <span>DA</span>
+              <img src="foto.jpeg" alt="Foto Dafa Dwi Andika" onerror="this.remove()">
+            </div>
+            <div class="seal" id="seal" title="Klik aku">
+              <b>95,84</b>
+              <small>Rata-rata nilai SMA</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="mq"><div id="mq"></div></div>
+
+    <!-- TENTANG -->
+    <section id="about">
+      <div class="wrap about">
+        <div class="rv">
+          <h2>Tentang saya</h2>
+          <p class="lead" style="margin-bottom:22px">Lulusan SMAS Brigjend Katamso II Medan.</p>
+          <p>
+            Saya punya pengalaman di organisasi sekolah dan dunia usaha.
+            Saya terbiasa mengambil keputusan untuk menyelesaikan masalah
+            dan bertanggung jawab atas pekerjaan yang diberikan.
+          </p>
+          <p>
+            Saya menguasai Word, Excel, dan PowerPoint, aktif berbahasa Indonesia,
+            bahasa Inggris tingkat menengah, dan sedang mendalami front end coding.
+            Saya mudah beradaptasi dan tetap tenang di bawah tekanan.
+          </p>
+        </div>
+
+        <div class="stats rv" style="--d:.15s">
+          <div class="stat"><b data-c="95.84" data-d="2">0</b><small>Rata-rata nilai</small></div>
+          <div class="stat"><b data-c="38">0</b><small>Prestasi dan pencapaian</small></div>
+          <div class="stat"><b data-c="10">0</b><small>Tahun berprestasi</small></div>
+          <div class="stat"><b data-c="1">0</b><small>Pengalaman kerja</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENDIDIKAN -->
+    <section id="edu" style="background:var(--bg2)">
+      <div class="wrap">
+        <h2 class="rv">Pendidikan</h2>
+        <p class="lead rv">Garis emas di samping akan terisi mengikuti scroll kamu.</p>
+
+        <ol class="tl" id="tl">
+          <div class="fillbar" id="fb"></div>
+
+          <li class="now rv">
+            <span class="y">2026 sampai sekarang</span>
+            <h3>Universitas Sumatera Utara</h3>
+            <p>S1 Ilmu Komputer, Fakultas Ilmu Komputer dan Teknologi Informasi.</p>
+          </li>
+          <li class="rv">
+            <span class="y">2023 sampai 2026</span>
+            <h3>SMAS Brigjend Katamso II Medan</h3>
+            <p>Lulus dengan rata-rata nilai 95,84.</p>
+          </li>
+          <li class="rv">
+            <span class="y">2020 sampai 2023</span>
+            <h3>SMP Negeri 20 Medan</h3>
+            <p>Sekretaris OSIS.</p>
+          </li>
+          <li class="rv">
+            <span class="y">2014 sampai 2020</span>
+            <h3>SD Dr. Wahidin Sudirohusodo</h3>
+            <p>Pendidikan dasar.</p>
+          </li>
+          <li class="rv">
+            <span class="y">2013 sampai 2014</span>
+            <h3>TK Dr. Wahidin Sudirohusodo</h3>
+            <p>Pendidikan anak usia dini.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ORGANISASI -->
+    <section id="org">
+      <div class="wrap">
+        <h2 class="rv">Pengalaman organisasi</h2>
+        <p class="lead rv">Filter berdasarkan jenjang, kartunya menyala mengikuti kursor.</p>
+
+        <div class="chips rv" data-f="org">
+          <button class="chip on" data-k="all">Semua</button>
+          <button class="chip" data-k="sma">SMA</button>
+          <button class="chip" data-k="smp">SMP</button>
+        </div>
+
+        <div class="grid" id="orgg">
+          <article class="card rv" data-k="sma">
+            <small>SMAS Brigjend Katamso II</small>
+            <h3>Ketua English Club</h3>
+            <p>
+              Mengelola program pengembangan bahasa Inggris, melatih anggota lewat diskusi,
+              lomba, dan presentasi, serta menumbuhkan minat dan kemampuan komunikasi siswa.
+            </p>
+          </article>
+
+          <article class="card rv" data-k="sma" style="--d:.1s">
+            <small>SMAS Brigjend Katamso II</small>
+            <h3>Koordinator OSIS dan Sekretaris Olimpiade</h3>
+            <p>
+              Memimpin perencanaan dan koordinasi, mendampingi siswa menyiapkan olimpiade,
+              dan membina anggota agar prestasi akademiknya naik.
+            </p>
+          </article>
+
+          <article class="card rv" data-k="sma" style="--d:.2s">
+            <small>SMAS Brigjend Katamso II</small>
+            <h3>Anggota Sekbid Olimpiade OSIS</h3>
+            <p>
+              Ikut merancang dan menjalankan kegiatan akademik serta mendukung
+              persiapan olimpiade siswa.
+            </p>
+          </article>
+
+          <article class="card rv" data-k="smp" style="--d:.3s">
+            <small>SMP Negeri 20 Medan</small>
+            <h3>Sekretaris OSIS</h3>
+            <p>
+              Bertanggung jawab atas administrasi, pencatatan kegiatan,
+              dan kelancaran program kerja OSIS.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENGALAMAN KERJA -->
+    <section id="work" style="background:var(--bg2)">
+      <div class="wrap">
+        <h2 class="rv">Pengalaman kerja</h2>
+        <p class="lead rv">Ketelitian yang saya latih di dunia usaha.</p>
+
+        <article class="card rv">
+          <small>Toko Gemilang Jaya</small>
+          <h3>Pengelola Keuangan dan Operasional</h3>
+          <p>
+            Mengelola arus kas harian dan transaksi penjualan dengan akurat,
+            mengawasi audit persediaan, memperbaiki proses pembukuan untuk mengurangi kesalahan,
+            dan menjaga disiplin operasional dalam mengelola aset usaha.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- KEAHLIAN -->
+    <section id="skill">
+      <div class="wrap">
+        <h2 class="rv">Keahlian</h2>
+        <p class="lead rv">
+          Persentase hanya perkiraan awal. Ubah sendiri di atribut <code>data-v</code> dan teks angkanya.
+        </p>
+
+        <div class="sk">
+          <div class="card rv">
+            <h3>Teknis</h3><br>
+            <div class="bar"><div>Front End Coding<b>60%</b></div><span><i data-v="60"></i></span></div>
+            <div class="bar"><div>Microsoft Excel<b>85%</b></div><span><i data-v="85"></i></span></div>
+            <div class="bar"><div>Word dan PowerPoint<b>90%</b></div><span><i data-v="90"></i></span></div>
+            <div class="bar"><div>Project Management Tools<b>70%</b></div><span><i data-v="70"></i></span></div>
+          </div>
+
+          <div class="card rv" style="--d:.12s">
+            <h3>Pribadi</h3><br>
+            <div class="bar"><div>Leadership<b>90%</b></div><span><i data-v="90"></i></span></div>
+            <div class="bar"><div>Strong Communication<b>88%</b></div><span><i data-v="88"></i></span></div>
+            <div class="bar"><div>Problem-Solving<b>90%</b></div><span><i data-v="90"></i></span></div>
+            <div class="bar"><div>Critical Analysis<b>85%</b></div><span><i data-v="85"></i></span></div>
+            <div class="bar"><div>Multitasking<b>80%</b></div><span><i data-v="80"></i></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESTASI -->
+    <section id="proj" style="background:var(--bg2)">
+      <div class="wrap">
+        <h2 class="rv">Prestasi</h2>
+        <p class="lead rv">Perjalanan dari 2016 sampai 2026: sempoa, olimpiade, bahasa Inggris, seni, dan organisasi.</p>
+
+        <div class="hl rv">
+          <div class="hlc"><span>🏆</span><b>Juara Umum 1</b><small>SMA Kelas 11, T.P 2024-2025</small></div>
+          <div class="hlc"><span>🥇</span><b>Ranking 1 Berturut-turut</b><small>Kelas 10 sampai 12 SMA</small></div>
+          <div class="hlc"><span>🥇</span><b>Medali Emas KS2N</b><small>Bahasa Inggris, 2023</small></div>
+          <div class="hlc"><span>🌏</span><b>Top 100 Dunia</b><small>Mathematics International Science Olympiad, 2023</small></div>
+        </div>
+
+        <div class="ps rv">
+          <div class="pstat"><b id="pt" data-c="0">0</b><small>Total pencapaian</small></div>
+          <div class="pstat"><b id="pg" data-c="0">0</b><small>Medali emas dan juara 1</small></div>
+          <div class="pstat"><b id="pc" data-c="0">0</b><small>Kategori</small></div>
+        </div>
+
+        <div class="tools rv">
+          <div class="fl" id="catf"></div>
+          <input id="q" type="search" placeholder="Cari lomba, kota, atau tahun..." aria-label="Cari prestasi">
+          <select id="yf" aria-label="Filter tahun"></select>
+        </div>
+
+        <div class="agrid" id="ag"></div>
+        <p id="empty" style="display:none;text-align:center;color:var(--mu)">
+          Tidak ada prestasi yang cocok dengan pencarianmu.
+        </p>
+        <div style="text-align:center;margin-top:30px">
+          <button class="btn gh" id="more">Tampilkan lebih banyak</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="contact">
+      <div class="wrap contact">
+        <div class="rv">
+          <h2>Mari terhubung</h2>
+          <p class="lead" style="margin-bottom:22px">Terbuka untuk magang, kepanitiaan, dan kolaborasi.</p>
+          <div class="cl">
+            <a href="mailto:dafadwiandika2@gmail.com">
+              <small>Email</small>dafadwiandika2@gmail.com
+            </a>
+            <a href="https://wa.me/6285946997883">
+              <small>WhatsApp</small>+62 859-4699-7883
+            </a>
+            <a href="#" id="cp">
+              <small>Klik untuk menyalin</small>Salin alamat email
+            </a>
+          </div>
+        </div>
+
+        <form id="fm" class="rv" style="--d:.15s">
+          <label>Nama<input id="nn" autocomplete="name"></label>
+          <label>Pesan<textarea id="ps"></textarea></label>
+          <button class="btn fill mg" type="submit">Kirim lewat email</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; <span id="yr"></span> Dafa Dwi Andika.
+    Tekan ↑ ↑ ↓ ↓ ← → ← → B A untuk kejutan.
+  </footer>
+
+  <button class="ib" id="top" aria-label="Ke atas">↑</button>
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
